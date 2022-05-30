@@ -7,11 +7,89 @@
   --second-text-color: #ffffff;
   --main-font: 'Roboto', sans-serif;
 }
+
 body {
   font-family: var(--main-font);
   color: var(--main-text-color);
   background-color: var(--main-backgraund-color);
 }
+
+/*----- main studio----- */
+
+.studio-section {
+  background: #2F303A;
+}
+.studio-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--second-text-color);
+}
+
+.studio-button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--second-button-color);
+  background: var(--main-focus-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.main-list,
+.work-list,
+.team-list {
+  list-style-type: none;
+}
+
+.main-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.main-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color)
+}
+
+.work-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team-section {
+  background: #F5F4FA;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team-role {
+  font-weight: 400;
+  font-size: 16px;
+  line-height:1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
 /* -----header----- */
 .header-link {
   text-decoration: none;
@@ -46,11 +124,6 @@ body {
   list-style-type: none;
 }
 
-.site-nav:hover,
-.site-nav:focus {
-  color: var(--main-focus-color);
-}
-
 .header-mail,
 .header-tel {
   font-weight: 500;
@@ -66,7 +139,17 @@ body {
   list-style-type: none;
 }
 
-/* -----main----- */
+.header-mail:hover,
+.header-mail:focus,
+.header-tel:hover,
+.header-tel:focus,
+.site-nav:hover,
+.site-nav:focus {
+  color: var(--main-focus-color);
+}
+
+
+/* -----main portfolio----- */
 
 .filter-item {
   font-family: inherit;
@@ -89,7 +172,7 @@ body {
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 
 .hero-title {
@@ -110,6 +193,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+
+/* -----footer portfolio----- */
 
 .footer {
   background-color: #2f303a;
